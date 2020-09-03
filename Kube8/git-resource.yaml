@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: git-source
+spec:
+  type: git
+  params:
+    - name: revision
+      value: v8.0.0
+    - name: url
+      value: https://github.com/OSMadmin/osmclient.git
+      #https://github.com/OSMadmin/OSM_RO.git
+      #https://github.com/ManikanthReddyAbbu/simple-nodejs-app
+      # https://github.com/OSMadmin/LCM.git
+      
